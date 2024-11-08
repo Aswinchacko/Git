@@ -33,7 +33,7 @@ Used to create a network between two computers.
 
 
 
-## Example Code
+## Example Code (Simple Connection)
 
 ### Server.java
 ```
