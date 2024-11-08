@@ -36,6 +36,7 @@ Used to create a network between two computers.
 ## Example Code
 
 ### Server.java
+```
 import java.io.*;
 import java.net.*;
 
@@ -43,13 +44,14 @@ public class Server {
     public static void main(String[] args) throws Exception {
         ServerSocket serverSocket = new ServerSocket(1234);
         System.out.println("Server is running on port 1234");
-
         serverSocket.accept();
         System.out.println("Client connected");
     }
 }
+```
 
 ### Client.java
+```
 import java.io.*;
 import java.net.*;
 
@@ -57,7 +59,6 @@ public class Client {
     public static void main(String[] args) throws Exception {
         Socket clientSocket = new Socket("localhost", 1234);
         System.out.println("Connected to server at localhost:1234");
-
     }
 }
-
+```
